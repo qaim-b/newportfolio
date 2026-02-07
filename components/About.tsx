@@ -69,9 +69,6 @@ export default function About() {
                                     🇯🇵 Now pursuing my Masters in Mechanical Engineering at <span className="text-accent-cyan font-semibold">University of Tokyo</span>, focusing on Robotics at GVLab
                                 </p>
                                 <p>
-                                    🤖 Currently researching <span className="text-accent-amber font-semibold">Human-Robot Interaction</span> for language education at GVLab
-                                </p>
-                                <p>
                                     🌏 Lived in 4 countries before age 22, bringing a global perspective to problem-solving
                                 </p>
                             </div>
