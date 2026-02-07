@@ -54,15 +54,15 @@ export default function Journey() {
       age: "Age 14-22",
       location: "Malaysia",
       flag: "🇲🇾",
-      description: "University of Malaya - Mechanical Engineering",
+      description: "University of Malaya - Where I learned Software Engineering",
       impact: "Started UM Global Buddies Football Team, learning how sports can bring people together",
     },
     {
       age: "Age 22-Present",
       location: "Japan",
       flag: "🇯🇵",
-      description: "University of Tokyo - Masters in Mechanical Engineering",
-      impact: "Exploring ways to combine robotics with education at GVlab, Hongo Campus",
+      description: "University of Tokyo - Masters in Mechanical Engineering, Robotics",
+      impact: "Researching at GVLab, Hongo Campus — combining robotics with real-world applications",
     },
   ]
 

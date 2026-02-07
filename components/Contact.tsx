@@ -95,7 +95,7 @@ export default function Contact() {
         {/* Download CV */}
         <div className="mb-12">
           <a
-            href="/cv.pdf"
+            href="/resume.pdf"
             download
             className="inline-flex items-center gap-3 px-8 py-4 bg-gradient-to-r from-accent to-accent-cyan text-white rounded-2xl hover:shadow-glow-lg hover:scale-105 transition-all duration-300 font-bold text-lg shadow-glow group"
           >
@@ -109,7 +109,7 @@ export default function Contact() {
         {/* Footer */}
         <div className="border-t border-white/10 pt-8">
           <p className="text-gray-400 font-medium">
-            © 2025 Qaim Baaden • Built with <span className="text-accent">Next.js</span> and passion for creating meaningful technology
+            © 2026 Qaim Baaden
           </p>
         </div>
       </div>

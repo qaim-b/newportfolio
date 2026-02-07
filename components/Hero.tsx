@@ -85,7 +85,7 @@ export default function Hero() {
         {/* Animated role text */}
         <div className={`mb-8 transition-all duration-1000 delay-300 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
           <h2 className="text-3xl md:text-5xl font-bold bg-gradient-to-r from-accent via-accent-cyan to-accent-amber bg-clip-text text-transparent bg-[length:200%_100%] animate-gradient">
-            AI Engineer & Builder
+            Robotics & AI Engineer
           </h2>
         </div>
 
