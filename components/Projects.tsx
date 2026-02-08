@@ -57,7 +57,7 @@ export default function Projects() {
     {
       title: "EcoTrace",
       subtitle: "Gamified Carbon Footprint Tracker",
-      description: "A cross-platform app that helps users log daily activities, visualize carbon impact, and build sustainable habits through streaks, badges, and challenges.",
+      description: "A cross-platform app that helps users log daily activities, visualize carbon impact, and build sustainable habits through streaks, badges, and challenges. Try on mobile for the best experience!",
       metrics: ["Activity Tracking", "Impact Insights", "Gamification"],
       techStack: ["Flutter", "Dart", "Provider", "Vercel"],
       github: "https://github.com/qaim-b/EcoTrace",
