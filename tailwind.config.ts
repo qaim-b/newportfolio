@@ -53,6 +53,7 @@ const config: Config = {
         'glow-pulse': 'glow-pulse 2s ease-in-out infinite',
         'slide-up': 'slide-up 0.6s ease-out',
         'slide-down': 'slide-down 0.6s ease-out',
+        'blink': 'blink 1s step-end infinite',
       },
       keyframes: {
         gradient: {
@@ -74,6 +75,10 @@ const config: Config = {
         'slide-down': {
           '0%': { transform: 'translateY(-20px)', opacity: '0' },
           '100%': { transform: 'translateY(0)', opacity: '1' },
+        },
+        'blink': {
+          '0%, 100%': { opacity: '1' },
+          '50%': { opacity: '0' },
         },
       },
     },

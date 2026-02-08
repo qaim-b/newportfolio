@@ -3,9 +3,18 @@
 import { useEffect, useState } from 'react';
 import Image from 'next/image';
 
+const phrases = [
+  'Full Stack Software Engineer',
+  'AI Engineer',
+  'Robotics Engineer',
+];
+
 export default function Hero() {
   const [isVisible, setIsVisible] = useState(false);
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
+  const [displayText, setDisplayText] = useState('');
+  const [phraseIndex, setPhraseIndex] = useState(0);
+  const [isDeleting, setIsDeleting] = useState(false);
 
   useEffect(() => {
     setIsVisible(true);
@@ -17,6 +26,32 @@ export default function Hero() {
     window.addEventListener('mousemove', handleMouseMove);
     return () => window.removeEventListener('mousemove', handleMouseMove);
   }, []);
+
+  useEffect(() => {
+    const currentPhrase = phrases[phraseIndex];
+    let timeout: NodeJS.Timeout;
+
+    if (!isDeleting && displayText === currentPhrase) {
+      // Pause before starting to delete
+      timeout = setTimeout(() => setIsDeleting(true), 2000);
+    } else if (isDeleting && displayText === '') {
+      // Move to next phrase
+      setIsDeleting(false);
+      setPhraseIndex((prev) => (prev + 1) % phrases.length);
+    } else {
+      // Type or delete a character
+      const speed = isDeleting ? 40 : 80;
+      timeout = setTimeout(() => {
+        setDisplayText(
+          isDeleting
+            ? currentPhrase.substring(0, displayText.length - 1)
+            : currentPhrase.substring(0, displayText.length + 1)
+        );
+      }, speed);
+    }
+
+    return () => clearTimeout(timeout);
+  }, [displayText, phraseIndex, isDeleting]);
 
   return (
     <section className="min-h-screen flex items-center justify-center px-6 py-20 bg-gradient-to-br from-primary via-primary-light to-background-light relative overflow-hidden">
@@ -82,18 +117,17 @@ export default function Hero() {
           Qaim Baaden
         </h1>
 
-        {/* Animated role text */}
-        <div className={`mb-8 transition-all duration-1000 delay-300 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
-          <h2 className="text-3xl md:text-5xl font-bold bg-gradient-to-r from-accent via-accent-cyan to-accent-amber bg-clip-text text-transparent bg-[length:200%_100%] animate-gradient">
-            Robotics & AI Engineer
+        {/* Typing animation role text */}
+        <div className={`mb-12 transition-all duration-1000 delay-300 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
+          <h2 className="text-3xl md:text-5xl font-bold bg-gradient-to-r from-accent via-accent-cyan to-accent-amber bg-clip-text text-transparent bg-[length:200%_100%] animate-gradient min-h-[1.2em]">
+            {displayText}
+            <span className="inline-block w-[3px] h-[1em] bg-accent-cyan ml-1 align-middle animate-blink" />
           </h2>
         </div>
 
         {/* Description */}
         <p className={`text-lg md:text-xl text-gray-400 mb-12 max-w-3xl mx-auto transition-all duration-1000 delay-400 leading-relaxed ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
-          Building intelligent solutions in <span className="text-accent-cyan font-semibold">Tokyo</span>.
-          Passionate about <span className="text-accent font-semibold">machine learning</span>,
-          <span className="text-accent-amber font-semibold"> computer vision</span>, and creating impactful AI applications.
+          Lived in <span className="text-accent-cyan font-semibold">4 countries</span>, bringing a global perspective to problem-solving.
         </p>
 
         {/* CTA Buttons */}
