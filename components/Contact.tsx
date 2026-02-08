@@ -56,7 +56,7 @@ export default function Contact() {
             <h3 className="text-2xl font-bold mb-6 text-white group-hover:text-accent-cyan transition-colors">Connect Online</h3>
             <div className="space-y-4">
               <a
-                href="https://www.linkedin.com/in/qaim-baaden-5a75a01ab/"
+                href="https://www.linkedin.com/in/qaimbaaden/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-4 text-gray-300 hover:text-accent transition-all duration-300 group/link p-4 rounded-xl hover:bg-white/5"

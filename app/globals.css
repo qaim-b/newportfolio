@@ -17,7 +17,7 @@ html {
 
 body {
   font-family: 'Poppins', system-ui, sans-serif;
-  background-color: #0A0E27;
+  background-color: #0F1C16;
   color: #E5E7EB;
   overflow-x: hidden;
 }
@@ -210,14 +210,14 @@ h6 {
 
 /* Gradient text */
 .gradient-text {
-  background: linear-gradient(135deg, #4A90E2 0%, #7B68EE 100%);
+  background: linear-gradient(135deg, #6FA38B 0%, #5E9BA1 100%);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 .gradient-text-teal {
-  background: linear-gradient(135deg, #20B2AA 0%, #4A90E2 100%);
+  background: linear-gradient(135deg, #5E9BA1 0%, #6FA38B 100%);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -238,20 +238,20 @@ h6 {
 
 /* Gradient backgrounds */
 .bg-gradient-modern {
-  background: linear-gradient(135deg, #4A90E2 0%, #7B68EE 100%);
+  background: linear-gradient(135deg, #6FA38B 0%, #5E9BA1 100%);
   background-size: 200% 200%;
   animation: gradient 8s ease infinite;
 }
 
 .bg-gradient-accent {
-  background: linear-gradient(135deg, #20B2AA 0%, #4A90E2 100%);
+  background: linear-gradient(135deg, #5E9BA1 0%, #6FA38B 100%);
   background-size: 200% 200%;
   animation: gradient 8s ease infinite;
 }
 
 /* Glowing effects */
 .glow-on-hover:hover {
-  box-shadow: 0 0 40px -10px rgba(74, 144, 226, 0.5);
+  box-shadow: 0 0 40px -10px rgba(111, 163, 139, 0.45);
 }
 
 /* Shimmer effect for loading/hover states */
@@ -291,7 +291,7 @@ h6 {
   inset: -2px;
   border-radius: 1rem;
   padding: 2px;
-  background: linear-gradient(135deg, #4A90E2, #7B68EE, #20B2AA);
+  background: linear-gradient(135deg, #6FA38B, #5E9BA1, #C9A66B);
   background-size: 200% 200%;
   animation: gradient 4s ease infinite;
   -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
