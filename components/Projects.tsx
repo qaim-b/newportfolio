@@ -33,7 +33,7 @@ export default function Projects() {
     {
       title: "Green Pulse",
       subtitle: "AI-Powered Building Energy Optimization",
-      description: "A machine learning platform that predicts and optimizes building energy consumption. Developed during undergraduate studies in Malaysia, focusing on sustainability and ROI-driven efficiency improvements for commercial buildings.",
+      description: "A machine learning platform that predicts and optimizes building energy consumption. Developed during undergraduate studies in Malaysia, focusing on sustainability and ROI-driven efficiency improvements for commercial buildings. Web app available, for best experience try on your smartphone.",
       metrics: ["92% Accuracy", "Energy Prediction", "Cost Optimization"],
       techStack: ["Python", "Machine Learning", "Streamlit", "Data Analytics"],
       github: "https://github.com/qaim-b/green-pulse",

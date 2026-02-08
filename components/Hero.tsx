@@ -127,7 +127,7 @@ export default function Hero() {
 
         {/* Description */}
         <p className={`text-lg md:text-xl text-gray-400 mb-12 max-w-3xl mx-auto transition-all duration-1000 delay-400 leading-relaxed ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
-          Lived in <span className="text-accent-cyan font-semibold">4 countries</span>, bringing a global perspective to problem-solving.
+          Based in <span className="text-accent-cyan font-semibold">Tokyo</span>. Passionate about building <span className="text-accent font-semibold">scalable projects</span>, bringing a global perspective to problem-solving.
         </p>
 
         {/* CTA Buttons */}

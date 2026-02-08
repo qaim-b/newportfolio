@@ -63,13 +63,10 @@ export default function About() {
                             </h3>
                             <div className="space-y-4 text-gray-300 leading-relaxed">
                                 <p>
-                                    🇲🇾 Started in <span className="text-accent font-semibold">Malaysia</span>, where I learned Software Engineering at University of Malaya
+                                    Started in <span className="text-accent font-semibold">Malaysia</span>, where I learned Software Engineering at University of Malaya
                                 </p>
                                 <p>
-                                    🇯🇵 Now pursuing my Masters in Mechanical Engineering at <span className="text-accent-cyan font-semibold">University of Tokyo</span>, focusing on Robotics at GVLab
-                                </p>
-                                <p>
-                                    🌏 Lived in 4 countries before age 22, bringing a global perspective to problem-solving
+                                    Now pursuing my Masters in Mechanical Engineering at <span className="text-accent-cyan font-semibold">University of Tokyo</span>, focusing on Robotics at GVLab
                                 </p>
                             </div>
                         </div>

@@ -1,6 +1,7 @@
 'use client';
 
 import { useEffect, useRef, useState } from 'react';
+import Image from 'next/image';
 
 export default function Journey() {
   const [visibleSteps, setVisibleSteps] = useState<number[]>([]);
@@ -32,35 +33,35 @@ export default function Journey() {
     {
       age: "Age 0-2",
       location: "Malaysia",
-      flag: "🇲🇾",
+      flagCode: "my",
       description: "My earliest years in Southeast Asia.",
       impact: null,
     },
     {
       age: "Age 2-9",
       location: "Oman",
-      flag: "🇴🇲",
+      flagCode: "om",
       description: "Experiencing life in the Middle East",
       impact: "Learning to adapt and appreciate different perspectives",
     },
     {
       age: "Age 9-14",
       location: "Kazakhstan",
-      flag: "🇰🇿",
+      flagCode: "kz",
       description: "Growing up in Central Asia",
       impact: "Beginning to understand diverse cultures and how to connect across languages",
     },
     {
       age: "Age 14-22",
       location: "Malaysia",
-      flag: "🇲🇾",
+      flagCode: "my",
       description: "University of Malaya - Where I learned Software Engineering",
       impact: "Started UM Global Buddies Football Team, learning how sports can bring people together",
     },
     {
       age: "Age 22-Present",
       location: "Japan",
-      flag: "🇯🇵",
+      flagCode: "jp",
       description: "University of Tokyo - Masters in Mechanical Engineering, Robotics",
       impact: "Researching at GVLab, Hongo Campus — combining robotics with real-world applications",
     },
@@ -121,7 +122,13 @@ export default function Journey() {
                       <h3 className={`text-2xl font-bold text-primary mb-2 group-hover:text-accent transition-colors duration-300 flex items-center gap-2 ${
                         index % 2 === 0 ? 'justify-end md:justify-end' : 'justify-start md:justify-start'
                       }`}>
-                        <span className="text-3xl">{step.flag}</span>
+                        <Image
+                          src={`https://flagcdn.com/w40/${step.flagCode}.png`}
+                          alt={`${step.location} flag`}
+                          width={32}
+                          height={24}
+                          className="inline-block rounded-sm"
+                        />
                         <span>{step.location}</span>
                       </h3>
                       <p className="text-sm bg-gradient-to-r from-accent to-accent-purple bg-clip-text text-transparent font-semibold mb-3">
