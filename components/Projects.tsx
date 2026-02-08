@@ -61,7 +61,7 @@ export default function Projects() {
       metrics: ["94% Accuracy", "Real-time Processing", "Production-Ready"],
       techStack: ["PyTorch", "FastAPI", "OpenCV", "Docker"],
       github: "https://github.com/qaim-b/InspectAI",
-      demo: "#",
+      demo: "",
       highlight: false,
       image: "/images/project-1.png",
       accentColor: "accent-cyan",
@@ -73,7 +73,7 @@ export default function Projects() {
       metrics: ["7 Emotion Classes", "Audio Processing", "Real-time Inference"],
       techStack: ["TensorFlow", "Librosa", "Python", "Scikit-learn"],
       github: "https://github.com/qaim-b/SpeechEmo_Recognition_System",
-      demo: "#",
+      demo: "",
       highlight: false,
       image: "/images/project-2.png",
       accentColor: "accent-amber",
@@ -85,7 +85,7 @@ export default function Projects() {
       metrics: ["Multi-Scale Detection", "Geo-Spatial Analysis", "Real-time Processing"],
       techStack: ["YOLO", "Python", "OpenCV", "TensorFlow"],
       github: "https://github.com/qaim-b/AerialVision",
-      demo: "#",
+      demo: "",
       highlight: false,
       image: "/images/project-3.png",
       accentColor: "accent",
@@ -234,15 +234,17 @@ export default function Projects() {
                         </svg>
                         GitHub
                       </a>
-                      <a
-                        href={project.demo}
-                        className={`group/btn flex items-center gap-2 px-6 py-3 border-2 ${accentClasses.border} ${accentClasses.text} rounded-xl hover:bg-gradient-to-r hover:from-${project.accentColor} hover:to-accent-cyan hover:text-white hover:border-transparent transition-all duration-300 font-semibold hover:${accentClasses.glow} hover:scale-105`}
-                      >
-                        <svg className="w-5 h-5 group-hover/btn:translate-x-1 group-hover/btn:-translate-y-1 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
-                        </svg>
-                        Live Demo
-                      </a>
+                      {project.demo && (
+                        <a
+                          href={project.demo}
+                          className={`group/btn flex items-center gap-2 px-6 py-3 border-2 ${accentClasses.border} ${accentClasses.text} rounded-xl hover:bg-gradient-to-r hover:from-${project.accentColor} hover:to-accent-cyan hover:text-white hover:border-transparent transition-all duration-300 font-semibold hover:${accentClasses.glow} hover:scale-105`}
+                        >
+                          <svg className="w-5 h-5 group-hover/btn:translate-x-1 group-hover/btn:-translate-y-1 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                          </svg>
+                          Live Demo
+                        </a>
+                      )}
                     </div>
                   </div>
                 </div>
