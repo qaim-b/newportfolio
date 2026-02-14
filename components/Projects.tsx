@@ -51,7 +51,7 @@ export default function Projects() {
       github: "https://github.com/qaim-b/InspectAI",
       demo: "https://inspectai-one.vercel.app",
       highlight: false,
-      image: "/images/project-1.png",
+      image: "/images/inspectai-new.png",
       accentColor: "accent-cyan",
     },
     {
