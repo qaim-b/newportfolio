@@ -87,7 +87,7 @@ export default function Projects() {
       github: "https://github.com/qaim-b/AerialVision",
       demo: "https://aerialvision.vercel.app",
       highlight: false,
-      image: "/images/aerialvision-new.png",
+      image: "/images/aerial vision-new.png",
       accentColor: "accent",
     },
     {
